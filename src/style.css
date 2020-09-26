@@ -1,6 +1,9 @@
 /* Css de Index.HTMl */
+
 #vitrina {
     background: #89BEAF;
+    display: flex;
+    flex-direction: column;
 }
 
 #franjaVitrina {
@@ -10,80 +13,111 @@
 #hojas {
     width: 428px;
     height: 447px;
-    margin: 0px 150px 0px 0px;
+    margin: 0px 200px 0px 0px;
 }
 
 #logocompleto {
-    width: 700px;
-    height: 200px;
+    width: 900px;
+    height: 150px;
     border-radius: 20px;
-    margin: 50px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
 }
 
+#promo {
+    display: flex;
+}
 
+#trio {
+    width: 250px; 
+    position: relative;
+    left: 650px;  
+    bottom: 150px;
+    border-radius: 20px; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
-     #inicio { 
-     background: url(../img/background.png) center fixed; 
-     background-size: cover;
-     }
+#textoPromo {
+    color: #FFFFFF;
+    font-size: 25px;
+    position: relative;
+    left: 740px;
+    bottom: 150px;
+}
 
-         #agradecimiento{
-             color: #FFFFFF;
-             font-family: 'Fjalla One', sans-serif; 
-             text-align: center;
-             top: 130px;
-             position: relative;
-             left: 82px;
-         }
+#valorPromo {
+    color: #FFFFFF;
+    font-size: 25px;
+    position: relative;
+    left: 750px;
+    bottom: 170px;
+}
 
-         #button1{
-             background: #FFFFFF;
-             width: 11%;
-             height: 50%;
-             color: #0bb2b5;
-             text-align: center;
-             border-radius: 20px;
-             top: 30px;
-             position: relative;
-             padding: 7px 40px;
-         }
-         #logo1{
-            height: 60px;
-            width: 60px;
-            border-radius: 50%;
-            border: solid 3px #FFFFFF;
-            right: 10px;
-            top: 10px;
-            position: absolute;
-         }
+/* Css de agradecimiento HTML */
 
-     #paginaValidar {
-     background: url(../img/background2.png) center fixed; 
-     background-size: cover;
-     }
+#inicio { 
+    background: url(../img/background.png) center fixed; 
+    background-size: cover;
+}
 
-         #tdc{
-             font-family: 'Fjalla One', sans-serif; 
-             width: 690px;
-             height: 740px;
-             margin: 0 auto;
-             margin-top: 100px;
-             margin-left: 280px;
-             border-radius: 28px;
-             background-color:#fee67d;
-             border: 4px #F2D0A4;
-             box-shadow: 5px 10px 2px #92B082;
-             text-align: center;
-         }   
-         #logo2{
-            height: 60px;
-            width: 60px;
-            border-radius: 50%;
-            border: solid 3px #FFFFFF;
-            right: 10px;
-            top: 10px;
-            position: absolute;
-         }
+#agradecimiento{
+    color: #FFFFFF;
+    font-family: 'Fjalla One', sans-serif; 
+    text-align: center;
+    top: 130px;
+    position: relative;
+    left: 82px;
+}
+
+#button1{
+    background: #FFFFFF;
+    width: 11%;
+    height: 50%;
+    color: #0bb2b5;
+    text-align: center;
+    border-radius: 20px;
+    top: 30px;
+    position: relative;
+    padding: 7px 40px;
+}
+
+#logo1{
+height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: solid 3px #FFFFFF;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+#paginaValidar {
+    background: url(../img/background2.png) center fixed; 
+    background-size: cover;
+}
+
+#tdc{
+    font-family: 'Fjalla One', sans-serif; 
+    width: 690px;
+    height: 740px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-left: 280px;
+    border-radius: 28px;
+    background-color:#fee67d;
+    border: 4px #F2D0A4;
+    box-shadow: 5px 10px 2px #92B082;
+    text-align: center;
+}   
+
+#logo2{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: solid 3px #FFFFFF;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+}
 
      #validacionExitosa{
      background: url(../img/background4.png) center fixed;
