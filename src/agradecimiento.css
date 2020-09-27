@@ -1,0 +1,35 @@
+#inicio { 
+    background: url(../img/background.png) center fixed; 
+    background-size: cover;
+}
+
+#agradecimiento {
+    color: #FFFFFF;
+    font-family: 'Fjalla One', sans-serif; 
+    text-align: center;
+    top: 130px;
+    position: relative;
+    left: 82px;
+}
+
+#button1 {
+    background: #FFFFFF;
+    width: 11%;
+    height: 50%;
+    color: #0bb2b5;
+    text-align: center;
+    border-radius: 20px;
+    top: 30px;
+    position: relative;
+    padding: 7px 40px;
+}
+
+#logo1 {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: solid 3px #FFFFFF;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+}

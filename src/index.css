@@ -1,0 +1,98 @@
+/* Css de Index.HTMl */
+
+#vitrina {
+    background: #89BEAF;
+    display: flex;
+    flex-direction: column;
+}
+
+#franjaVitrina {
+    display: flex;
+}
+
+#hojas {
+    width: 428px;
+    height: 447px;
+    margin: 0px 200px 0px 0px;
+}
+
+#logocompleto {
+    width: 900px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 40px 0px 0px 0px;
+}
+
+#promo {
+    display: flex;
+}
+
+#trio {
+    width: 250px; 
+    position: relative;
+    left: 650px;  
+    bottom: 150px;
+    border-radius: 20px; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#textoPromo {
+    color: #FFFFFF;
+    font-size: 25px;
+    position: relative;
+    left: 740px;
+    bottom: 150px;
+}
+
+#valorPromo {
+    color: #FFFFFF;
+    font-size: 25px;
+    position: relative;
+    left: 750px;
+    bottom: 170px;
+}
+
+#cervezaAhumada {
+    display: flex;
+    flex-direction: start;
+    position: relative;
+    left: 100px;
+    bottom: 150px;
+}
+
+#imagenCerveza {
+    width: 250px;
+    height: 208px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    margin: 0px 100px 0px 100px;
+}
+
+#textoAhumada {
+    display: flex;
+    flex-direction: start;
+    position: relative;
+    left: 150px;
+    bottom: 130px;
+}
+
+#textoAhumada > p {
+    margin: 0px 185px 0px 100px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+#valoresAhumada {
+    display: flex;
+    flex-direction: start;
+    position: relative;
+    left: 150px;
+    bottom: 130px;
+}
+
+#valoresAhumada > p {
+    margin: 0px 250px 0px 150px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
