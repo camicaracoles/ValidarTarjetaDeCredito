@@ -1,43 +1,60 @@
-// creamos una  función para utilizar dos funciones a la vez y guardar la información ingresada por el usuario para que no se pierda en el imput
-let local = "";
-function valid(valor) {
-  console.log("valor funcion valid ", valor);
-  local = valor;
-  maskify(valor);
-} function validarTodo()
-let btntipotarjeta = document.getElementById("numberOfCard");
-let btncodigoVeri = document.getElementById("codigoVeri");
-let btntitular = document.getElementById("titular");
-let btnidentificacion = document.getElementById("identificacion")
-let btndireccion = document.getElementById("direccion");
-let btnciudad = document.getElementById("ciudad");// Creamos una función que nos permite enmascarar el numero de tarjeta, a ecepción de los últimos cuatro digitos 
-function maskify() {
-  let cardElement = document.getElementById("numberOfCard");
-  console.log(cardElement.value);
-  let str = cardElement.value;
-  let x = str.length;
-  let output = "";
-  for (let i = 0; i < x - 4; i++) {
-    output += "#";
+//Verificación del formulario (si el campo esta vacio, si la info es correcta o no).
+
+function validarTodo() {
+  let tipoTarjeta = document.getElementById('tt').value;
+  let pais = document.getElementById('país').value;
+  let numTarjeta = document.getElementById('numberOfCard').value;
+  let numMes = document.getElementById('mes').value;
+  let año = document.getElementById('año').value;
+  let codigoVerifi = document.getElementById('codigoVeri').value;
+  let titular = document.getElementById('titular').value;
+  let identificacion = document.getElementById('identificacion').value;
+  let tipopais = document.getElementById('tipopais').value;
+  let direccion = document.getElementById('direccion').value;
+  let ciudad = document.getElementById('ciudad').value;
+  let coutas = document.getElementById('cuotas').vale;
+
+  if (tipoTarjeta == null) {
+    alert('Elegir un tipo de tarjeta.');
+  } else if (pais == null) {
+    alert('Elegir un tipo de país.');
+  } else if (numTarjeta == '') {
+    alert('Escriba el número de la tarjeta.');
+  } else if (numMes == null) {
+    alert('Elegir mes.');
+  } else if (año == null) {
+    alert('Elegir año.');
+  } else if (codigoVerifi == '') {
+    alert('Escribir código de verificación.');
+  } else if (titular == '') {
+    alert('Escribir nombre del titular.');
+  } else if (identificacion == '') {
+    alert('Escribir número de identificación.');
+  } else if (documento == null) {
+    alert('Elegir tipo de documento.');
+  } else if (tipopais == null) {
+    alert('Elegir tipo país.');
+  } else if (direccion == '') {
+    alert('Escribir dirección.');
+  } else if (ciudad == '') {
+    alert('Escribir ciudad.');
+  } else if (cuotas == null) {
+    alert('Elegir cuotas.');
+  } else {
+    isValidCard()
   }
-  cardElement.value = (output + str.substring(x - 4, x));
-  console.log(str);
-} // Creamos función para validar
+}
+
+// Creamos función para validar
+
 function isValidCard() {
   let cardNumber = document.getElementById("numberOfCard").value;
-  console.log(cardNumber);
   let arrayOfNumberOfCard = [];
-  if (cardNumber == "") {
-    alert("Escribe el numero de tu tarjeta");
-  } else {
-    //Hacemos un bucle para extraer los caracteres de los numeros string
-    for (i = 0; i < cardNumber.length; i++) {
-      let firstNumber = cardNumber.charAt(i);
-      console.log(firstNumber)
-      arrayOfNumberOfCard.push(firstNumber);
-    }
+  for (i = 0; i < cardNumber.length; i++) {
+    let firstNumber = cardNumber.charAt(i);
+    console.log(firstNumber)
+    arrayOfNumberOfCard.push(firstNumber);
   }
-  console.log("arrayNumberOfCard es igual a ", arrayOfNumberOfCard)
   //El array invertimos para poder usar el algoritmo Luhn
   let arrayOfNumberOfCardReverse = arrayOfNumberOfCard.reverse();
   console.log("arrayNumberOfCard reverse ", arrayOfNumberOfCardReverse)
@@ -50,7 +67,6 @@ function isValidCard() {
       arrayOfNumberOfCardReverse.splice(i, 1, sumFigure);
     }
   }
-  console.log(arrayOfNumberOfCardReverse);
   //Esta variable almacenará la suma de los elementos
   let sumaTotal = 0;//Este bucle nos permite trabajar con todo los elementos de array
   for (i = 0; i < arrayOfNumberOfCardReverse.length; i++) {
@@ -59,7 +75,6 @@ function isValidCard() {
   console.log(sumaTotal);  //Evaluamos si la suma cumple la condicion
   if (sumaTotal % 10 === 0) {
     //Retornaremos esta alerta si cumple la condicion
-    maskify()
     window.location = "resultadovalidacion.html";
     return alert("Su tarjeta es valida");
   } else {
@@ -67,3 +82,4 @@ function isValidCard() {
     return alert("Su tarjeta es invalida");
   }
 }
+

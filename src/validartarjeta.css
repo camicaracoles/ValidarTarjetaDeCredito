@@ -1,28 +1,83 @@
 #paginaValidar {
-    background: url(../img/background2.png) center fixed; 
+    background: url(../img/fondoValidar.png) center fixed; 
     background-size: cover;
 }
 
 #tdc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Fjalla One', sans-serif; 
     width: 690px;
-    height: 740px;
+    height: 780px;
     margin: 0 auto;
     margin-top: 100px;
     margin-left: 280px;
     border-radius: 28px;
-    background-color:#fee67d;
+    background-color: #55AFAE;
     border: 4px #F2D0A4;
     box-shadow: 5px 10px 2px #92B082;
-    text-align: center;
+    position: relative;
+    left: 250px;
+    color: #FFFFFF;
 }   
 
-#logo2{
-    height: 60px;
-    width: 60px;
+.texto {
+    margin: 25px 0px 25px 0px;
+}
+
+#textoIdentificación{
+    margin: 0px;
+}
+
+#tdc > div {
+    display: flex;
+    flex-direction: start;
+}
+
+.botonOpcion {
+    width: 100px;
+    height: 30px;
+    margin: 20px 20px 0px 20px;
+}
+
+.botonOpcionInpu {
+    width: 150px;
+    height: 20px;
+    margin: 20px 0px 0px 20px;
+}
+
+#identificacionContenedor{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#botonOpcionIdentificación {
+    width: 100px;
+    height: 30px;
+    margin: 5px 20px 0px 0px;
+}
+
+#logo2 {
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     border: solid 3px #FFFFFF;
     right: 10px;
     top: 10px;
     position: absolute;
+}
+
+#button2 {
+    background: #FFFFFF;
+    width: 250px;
+    height: 50px;
+    color: #0bb2b5;
+    text-align: center;
+    border-radius: 20px;
+    padding: 7px 40px;
+    margin: 10px 0px 20px 0px;
+    border: none;
+    box-shadow: 5px 10px 2px #92B082;
 }

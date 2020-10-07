@@ -1,83 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css" />
-        <link rel="icon" type="image/png" href="../img/logocerveceria.png" />
-        <title>Achachairú</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" href="../img/logocerveceria.png" />
+    <title>Achachairú</title>
+</head>
 
-    <body id="vitrina">
-        <div id="franjaVitrina">
-            <img src="../img/hojas.png" id="hojas" /></img>
-            <img src="../img/banner.png" id="logocompleto" /></img>
-        </div>
+<body id="vitrina">
+    
+    <div id="franjaVitrina">
+        <img src="../img/hojas.png" id="hojas" /></img>
+        <img src="../img/banner.png" id="logocompleto" /></img>
+    </div>
 
-        <div id="promo">
-            <img src="../img/trioMix.png" id="trio" /></img>
-        </div>
+    <div id="promo">
+        <img src="../img/trioMix.png" class="trio" id="0" onclick="detalle(0);calcular(6000);total()" /></img>
+    </div>
 
-        <div id="promoTexto">
-            <p id="textoPromo">Mix Trío</p>
-            <p id="valorPromo">$6.000</p>
-        </div>
+    <div id="promoTexto">
+        <p id="textoPromo">Mix Trío</p>
+        <p id="valorPromo">$6.000</p>
+    </div>
 
-        <div id="cervezaAhumada">
-            <img src="../img/cervezaAhumada.png" id="imagenCerveza" /></img>
-            <img src="../img/cervezaAhumadaX3.png" id="imagenCerveza" /></img>
-            <img src="../img/cervezaAhumadaX6.png" id="imagenCerveza" /></img>
-        </div>
+    <div id="cervezaAhumada">
+        <img src="../img/cervezaAhumada.png" class="imagenCerveza" id="1" onclick="detalle(1);calcular(2500);total()"/></img>
+        <img src="../img/cervezaAhumadaX3.png" class="imagenCerveza" id="2" onclick="detalle(2);calcular(6500);total()"/></img>
+        <img src="../img/cervezaAhumadaX6.png" class="imagenCerveza" id="3" onclick="detalle(3);calcular(10000);total()"/></img>
+    </div>
 
-        <div id="textoAhumada">
-            <p>Cerveza Ahumada</p>
-            <p>Cerveza Ahumada X3</p>
-            <p>Cerveza Ahumada X6</p>
-        </div>
-        
-        <div id="valoresAhumada">
-            <p>$2.500</p>
-            <p>$6.500</p>
-            <p>$10.000</p>
-        </div>
+    <div id="textoAhumada">
+        <p>Cerveza Ahumada</p>
+        <p>Cerveza Ahumada X3</p>
+        <p>Cerveza Ahumada X6</p>
+    </div>
 
-        <div id="cervezaFrutal">
-            <img src="../img/cervezaFrutal.png" id="imagenCervezaF" /></img>
-            <img src="../img/cervezaFrutalX3.png" id="imagenCervezaF" /></img>
-            <img src="../img/cervezaFrutalX6.png" id="imagenCervezaF" /></img>
-        </div>
+    <div id="valoresAhumada">
+        <p>$2.500</p>
+        <p>$6.500</p>
+        <p>$10.000</p>
+    </div>
 
-        <div id="textoFrutal">
-            <p>Cerveza Frutal</p>
-            <p>Cerveza Frutal X3</p>
-            <p>Cerveza Frutal X6</p>
-        </div>
-        
-        <div id="valoresFrutal">
-            <p>$2.500</p>
-            <p>$6.500</p>
-            <p>$10.000</p>
-        </div>
+    <div id="cervezaFrutal">
+        <img src="../img/cervezaFrutal.png" class="imagenCerveza" id="4" onclick="detalle(4); calcular(2500);total()" /></img>
+        <img src="../img/cervezaFrutalX3.png" class="imagenCerveza" id="5" onclick="detalle(5);calcular(6500);total()" /></img>
+        <img src="../img/cervezaFrutalX6.png" class="imagenCerveza" id="6" onclick="detalle(6);calcular(10000);total()" /></img>
+    </div>
 
-        <div id="cervezaEnvejecida">
-            <img src="../img/cervezaEnvejecida.png" id="imagenCervezaE" /></img>
-            <img src="../img/cervezaEnvejecidaX3.png" id="imagenCervezaE" /></img>
-            <img src="../img/cervezaEnvejecidaX6.png" id="imagenCervezaE" /></img>
-        </div>
+    <div id="textoFrutal">
+        <p>Cerveza Frutal</p>
+        <p>Cerveza Frutal X3</p>
+        <p>Cerveza Frutal X6</p>
+    </div>
 
-        <div id="textoEnvejecida">
-            <p>Cerveza Envejecida</p>
-            <p>Cerveza Envejecida X3</p>
-            <p>Cerveza Envejecida X6</p>
-        </div>
-        
-        <div id="valoresEnvejecida">
-            <p>$2.500</p>
-            <p>$6.500</p>
-            <p>$10.000</p>
-        </div>
+    <div id="valoresFrutal">
+        <p>$2.500</p>
+        <p>$6.500</p>
+        <p>$10.000</p>
+    </div>
 
-    </body>
+    <div id="cervezaEnvejecida">
+        <img src="../img/cervezaEnvejecida.png" class="imagenCerveza" id="7" onclick="detalle(7);calcular(2500);total()" /></img>
+        <img src="../img/cervezaEnvejecidaX3.png" class="imagenCerveza"id="8" onclick="detalle(8);calcular(6500);total()"  /></img>
+        <img src="../img/cervezaEnvejecidaX6.png" class="imagenCerveza" id="9" onclick="detalle(9);calcular(10000);total()" /></img>
+    </div>
 
-</html>    
+    <div id="textoEnvejecida">
+        <p>Cerveza Envejecida</p>
+        <p>Cerveza Envejecida X3</p>
+        <p>Cerveza Envejecida X6</p>
+    </div>
+
+    <div id="valoresEnvejecida">
+        <p>$2.500</p>
+        <p>$6.500</p>
+        <p>$10.000</p>
+    </div>
+
+    <div id="total">
+        <div id="eleccion">
+            
+        </div>
+        <div id="resultado">
+            Total $  <span id="res"></span>
+        </div>
+    </div>
+
+    <a href="agradecimiento.html"><button id="comprar">Comprar</button></a>
+
+    <img src="../img/finalVitrina.png" id="finalVitrina" /></img>
+
+    <script type="text/javascript" src=index.js></script>
+    <script type="text/javascript" src=data.js></script>
+
+</body>
+
+</html>
