@@ -12,7 +12,7 @@ function validarTodo() {
   let tipopais = document.getElementById('tipopais').value;
   let direccion = document.getElementById('direccion').value;
   let ciudad = document.getElementById('ciudad').value;
-  let coutas = document.getElementById('cuotas').vale;
+
 
   if (tipoTarjeta == null) {
     alert('Elegir un tipo de tarjeta.');
@@ -37,10 +37,8 @@ function validarTodo() {
   } else if (direccion == '') {
     alert('Escribir dirección.');
   } else if (ciudad == '') {
-    alert('Escribir ciudad.');
-  } else if (cuotas == null) {
-    alert('Elegir cuotas.');
-  } else {
+    alert('Escribir ciudad.'); 
+  }  else {
     isValidCard()
   }
 }
@@ -48,38 +46,66 @@ function validarTodo() {
 // Creamos función para validar
 
 function isValidCard() {
-  let cardNumber = document.getElementById("numberOfCard").value;
-  let arrayOfNumberOfCard = [];
-  for (i = 0; i < cardNumber.length; i++) {
-    let firstNumber = cardNumber.charAt(i);
-    console.log(firstNumber)
-    arrayOfNumberOfCard.push(firstNumber);
+  //variables para evaluar numero ingresado y crear primer array
+  let numero = document.getElementById("numberOfCard").value;
+  let cadena = (numero.split("")).reverse();
+  let cadenaTotal = []; // Todos los numeros pares e impares
+  let mayoresDiez = [];
+  let menoresDiez = [];
+
+  // for para separar numeros por posicion y multiplicar los numero en posicion par por 2
+  for (let i = 0; i < cadena.length; i++) {
+    let valor = parseInt(cadena[i]); //cadena number
+    if (i % 2 == 0) {
+      let resultadoImpar = valor
+      cadenaTotal.push(resultadoImpar);
+    } //valores impar
+    else {
+      let resultadoPar = valor * 2
+      cadenaTotal.push(resultadoPar);
+    } //posiciones pares multiplicadas por 2
   }
-  //El array invertimos para poder usar el algoritmo Luhn
-  let arrayOfNumberOfCardReverse = arrayOfNumberOfCard.reverse();
-  console.log("arrayNumberOfCard reverse ", arrayOfNumberOfCardReverse)
-  let multiplied;  //Creamos bucle que nos permite trabajar solo con los numeros de los indices pares  // 12345678
-  for (i = 0; i < arrayOfNumberOfCardReverse.length; i += 2) {
-    multiplied = parseInt(arrayOfNumberOfCardReverse[i]) * 2; //Verificamos si es mayor o igual a 10
-    if (parseInt(multiplied) >= 10) {
-      let multString = multiplied.toString();
-      let sumFigure = parseInt(multString[0]) + parseInt(multString[1]);
-      arrayOfNumberOfCardReverse.splice(i, 1, sumFigure);
+
+  //cadena de numeros menor a diez
+  for (let i = 0; i < cadenaTotal.length; i++) {
+    let resp = cadenaTotal[i];
+    if (resp < 10) {
+      menoresDiez.push(resp)
     }
   }
-  //Esta variable almacenará la suma de los elementos
-  let sumaTotal = 0;//Este bucle nos permite trabajar con todo los elementos de array
-  for (i = 0; i < arrayOfNumberOfCardReverse.length; i++) {
-    sumaTotal += parseInt(arrayOfNumberOfCardReverse[i]);
+  //Cadena de numeros mayores a diez
+  for (let i = 0; i < cadenaTotal.length; i++) {
+    let res = cadenaTotal[i];
+    if (res >= 10) {
+      mayoresDiez.push(res)
+    }
   }
-  console.log(sumaTotal);  //Evaluamos si la suma cumple la condicion
-  if (sumaTotal % 10 === 0) {
+
+  //separar numeros mayores a 10
+  let mayorSeparados = [];
+  let digitos = mayoresDiez.toString().replace(/,/g, "");
+  for (let i = 0; i < digitos.length; i++) {
+    mayorSeparados.push(parseInt(digitos.charAt(i)));
+  }
+
+  //suma de digitos entre numeros mayores y menores a diez
+  let arrayFinal = menoresDiez.concat(mayorSeparados);
+  let total = arrayFinal.reduce((a, b) => a + b, 0);
+
+  // Si el residuo es igual a 0 muestra mensaje de Validado con exito , sino muestra mensaje de tarjeta no validada
+  if (total % 10 === 0) {
     //Retornaremos esta alerta si cumple la condicion
     window.location = "resultadovalidacion.html";
     return alert("Su tarjeta es valida");
-  } else {
+  }
+  else {
     //Retornaremos esta alerta si no cumple la condicion
-    return alert("Su tarjeta es invalida");
+    return alert("Su tarjeta no invalida");
   }
 }
+
+
+
+
+
 

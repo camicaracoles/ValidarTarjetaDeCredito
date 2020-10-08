@@ -1,9 +1,8 @@
-#validacionExitosa{
-    background: url(../img/background4.png) center fixed;
-    background-size: cover;
+#validacionExitosa {
+    background-color: #89BEAF;
 }
 
-#exito{
+#exito {
     color: #FFFFFF;
     font-family: 'Fjalla One', sans-serif; 
     text-align: center;
