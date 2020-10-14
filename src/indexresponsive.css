@@ -1,0 +1,285 @@
+@media (max-width:1440px) { 
+    /* smartphones, Android phones, landscape iPhone */ 
+    #vitrina {
+        background: #89BEAF;
+        display: flex;
+        flex-direction: column;  
+    }
+
+    #franjaVitrina {
+        display: flex;
+    }
+    
+    #hojas {
+        width: 120px;
+        height: 100%;
+        margin: 0px 20px 0px 0px;
+    }
+
+    #logocompleto {
+        display: none;
+    }
+
+    #logoResponsive1 {
+        width: 270px;
+        height: 100%;
+        position: relative;
+        right: 20px;
+    }
+
+    #promo {
+        display: flex;
+    }
+
+    .trio {
+        width: 150px; 
+        position: relative;
+        left: 130px;
+        border-radius: 20px; 
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        cursor: pointer;
+    }
+
+    #textoPromo {
+        color: #FFFFFF;
+        font-size: 20px;
+        position: relative;
+        left: 165px;
+        bottom: 5px;
+    }
+
+    #valorPromo {
+        color: #FFFFFF;
+        font-size: 20px;
+        position: relative;
+        left: 170px;
+        bottom: 20px;
+    }
+    
+    #cervezaAhumada {
+        display: flex;
+        flex-direction: start;
+        position: relative;
+    }
+
+    .imagenCerveza {
+        width: 120px;
+        height: 100px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+        margin: 0px 10px 0px 10px;
+        cursor: pointer;
+    }
+
+    #textoAhumada {
+        display: flex;
+        width: 400px;
+        text-align: center;
+        flex-direction: start;
+        position: relative;
+        top: 5px;
+    }
+
+    #textoAhumada > p {
+        margin: 0px 20px 0px 35px;
+        color: #FFFFFF;
+        font-size: 15px;
+    }
+
+    #valoresAhumada {
+        display: flex;
+        flex-direction: start;
+        position: relative;
+        left: 10px;
+    }
+
+    #valoresAhumada > p {
+        margin: 10px 40px 5px 40px;
+        color: #FFFFFF;
+        font-size: 15px;
+    } 
+  
+    #CA3 {
+        position: relative;
+        left: 10px;
+    }
+
+    #CA6 {
+        position: relative;
+        left: 10px;
+    }
+
+    #VA3 {
+        position: relative;
+        left: 20px;
+    }
+    
+    #VA6 {
+        position: relative;
+        left: 30px;
+    }
+
+    #cervezaFrutal {
+        display: flex;
+        flex-direction: start;
+        position: relative;
+        top: 30px;
+    }
+
+    #textoFrutal {
+        display: flex;
+        width: 400px;
+        text-align: center;
+        flex-direction: start;
+        position: relative;
+        top: 40px;
+    }
+
+    #textoFrutal > p {
+        color: #FFFFFF;
+        font-size: 15px;
+        margin: 0px 20px 0px 35px;
+    }
+
+    .CF3 {
+        position: relative;
+        left: 12px;
+    }
+
+    #valoresFrutal {
+        display: flex;
+        flex-direction: start;
+        position: relative;
+        left: 10px;
+        top: 35px;
+    }
+
+    #valoresFrutal > p {
+        margin: 10px 40px 5px 40px;
+        color: #FFFFFF;
+        font-size: 15px;
+    }
+
+    #VF3 {
+        position: relative;
+        left: 18px;
+    }
+
+    #VF6 {
+        position: relative;
+        left: 32px;
+    }
+    
+    #cervezaEnvejecida {
+        display: flex;
+        flex-direction: start;
+        position: relative;
+        top: 60px; 
+    }
+
+    #textoEnvejecida {
+        display: flex;
+        width: 440px;
+        text-align: center;
+        flex-direction: start;
+        position: relative;
+        top: 55px;
+    }
+
+    #textoEnvejecida > p {
+        margin: 10px 20px 5px 20px;
+        color: #FFFFFF;
+        font-size: 15px;
+    }
+
+    #CE6 {
+        position: relative;
+        right: 16px;
+    }
+
+    #valoresEnvejecida {
+        display: flex;
+        flex-direction: start;
+        position: relative;
+        left: 10px;
+        top: 45px;
+    }
+  
+    #valoresEnvejecida > p {
+        margin: 10px 40px 5px 40px;
+        color: #FFFFFF;
+        font-size: 15px;
+    }
+
+    #VE3 {
+        position: relative;
+        left: 20px;
+    }
+
+    #VE6 {
+        position: relative;
+        left: 30px;
+    }
+
+    #total {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        align-items: center;
+        text-align: center;
+        background: #FFFFFF;
+        border-radius: 50px;
+        color: #4A989E;
+        font-size: 20px;
+        padding: 10px 10px 10px 10px;
+        position: relative;
+        top: 80px;
+        left: 47px;
+    }
+
+    #eleccion {
+        display: flex;
+        flex-direction: column;
+        color: #000000;
+        font-size: 12px;
+    }
+
+    #resultado {
+        display: flex;
+        flex-direction: start;
+        align-items: center;
+    }
+    
+    #comprar {
+        width: 150px;
+        height: 50px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        color: #4A989E;
+        font-size: 20px;
+        border: none;
+        position: relative;
+        top: 100px;
+        left: 130px;
+        cursor: pointer;
+    }
+
+    #finalVitrina {
+        width: 150px;
+        height: 100%;
+        position: relative;
+        top: 110px;
+        left: 255px;
+    }
+  
+    #eliminar {
+        background: #F7F7F7;
+        width: 60px;
+        height: 25px;
+        color: #888888;
+        text-align: center;
+        border-radius: 20px;
+        margin: 0px 0px 0px 30px;
+    }
+}

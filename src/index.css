@@ -1,234 +1,239 @@
 /* Css de Index.HTMl */
+@media (min-width:1500px) { 
+   #vitrina {
+      background: #89BEAF;
+      display: flex;
+      flex-direction: column;
+   }
 
-#vitrina {
-    background: #89BEAF;
-    display: flex;
-    flex-direction: column;
-    
-}
+   #franjaVitrina {
+      display: flex;
+   }
 
-#franjaVitrina {
-    display: flex;
-}
+   #hojas {
+      width: 428px;
+      height: 447px;
+      margin: 0px 200px 0px 0px;
+   }
 
-#hojas {
-    width: 428px;
-    height: 447px;
-    margin: 0px 200px 0px 0px;
-}
+   #logocompleto {
+      width: 900px;
+      height: 150px;
+      border-radius: 20px;
+      margin: 40px 0px 0px 0px;
+   }
 
-#logocompleto {
-    width: 900px;
-    height: 150px;
-    border-radius: 20px;
-    margin: 40px 0px 0px 0px;
-}
+   #logoResponsive1 {
+      display: none;
+   }
 
-#promo {
-    display: flex;
-}
+   #promo {
+      display: flex;
+   }
 
-.trio {
-    width: 250px; 
-    position: relative;
-    left: 650px;  
-    bottom: 150px;
-    border-radius: 20px; 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
-}
+   .trio {
+      width: 250px; 
+      position: relative;
+      left: 650px;  
+      bottom: 150px;
+      border-radius: 20px; 
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      cursor: pointer;
+   }
 
-#textoPromo {
-    color: #FFFFFF;
-    font-size: 25px;
-    position: relative;
-    left: 740px;
-    bottom: 150px;
-}
+   #textoPromo {
+      color: #FFFFFF;
+      font-size: 25px;
+      position: relative;
+      left: 740px;
+      bottom: 150px;
+   }
 
-#valorPromo {
-    color: #FFFFFF;
-    font-size: 25px;
-    position: relative;
-    left: 750px;
-    bottom: 170px;
-}
+   #valorPromo {
+      color: #FFFFFF;
+      font-size: 25px;
+      position: relative;
+      left: 750px;
+      bottom: 170px;
+   }    
 
-#cervezaAhumada {
-    display: flex;
-    flex-direction: start;
-    position: relative;
-    left: 100px;
-    bottom: 150px;
-}
+   #cervezaAhumada {
+      display: flex;
+      flex-direction: start;
+      position: relative;
+      left: 100px;
+      bottom: 150px;
+   }
 
-.imagenCerveza {
-    width: 250px;
-    height: 208px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 20px;
-    margin: 0px 100px 0px 100px;
-    cursor: pointer;
-}
+   .imagenCerveza {
+      width: 250px;
+      height: 208px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 20px;
+      margin: 0px 100px 0px 100px;
+      cursor: pointer;
+   }
 
-#textoAhumada {
-    display: flex;
-    flex-direction: start;
-    position: relative;
-    left: 150px;
-    bottom: 130px;
-}
+   #textoAhumada {
+      display: flex;
+      flex-direction: start;
+      position: relative;
+      left: 150px;
+      bottom: 130px;
+   }
 
-#textoAhumada > p {
-    margin: 0px 185px 0px 100px;
-    color: #FFFFFF;
-    font-size: 20px;
-}
+   #textoAhumada > p {
+      margin: 0px 185px 0px 100px;
+      color: #FFFFFF;
+      font-size: 20px;
+   }
 
-#valoresAhumada {
-    display: flex;
-    flex-direction: start;
-    position: relative;
-    left: 150px;
-    bottom: 130px;
-}
+   #valoresAhumada {
+      display: flex;
+      flex-direction: start;
+      position: relative;
+      left: 150px;
+      bottom: 130px;
+   }
 
-#valoresAhumada > p {
-    margin: 0px 250px 0px 150px;
-    color: #FFFFFF;
-    font-size: 20px;
-}
+   #valoresAhumada > p {
+      margin: 0px 250px 0px 150px;
+      color: #FFFFFF;
+      font-size: 20px;
+   } 
 
-#cervezaFrutal {
-    display: flex;
-    flex-direction: start;
-    position: relative;
-    left: 100px;
-    bottom: 50px;
-}
+   #cervezaFrutal {
+      display: flex;
+      flex-direction: start;
+      position: relative;
+      left: 100px;
+      bottom: 50px;
+   }
 
 
-#textoFrutal {
-    display: flex;
-    flex-direction: start;
-    position: relative;
-    left: 170px;
-    bottom: 30px;
-}
+   #textoFrutal {
+      display: flex;
+      flex-direction: start;
+      position: relative;
+      left: 170px;
+      bottom: 30px;
+   }
 
-#textoFrutal > p {
-    margin: 0px 210px 0px 100px;
-    color: #FFFFFF;
-    font-size: 20px;
-}
+   #textoFrutal > p {
+      margin: 0px 210px 0px 100px;
+      color: #FFFFFF;
+      font-size: 20px;
+   }
 
-#valoresFrutal {
-    display: flex;
-    flex-direction: start;
-    position: relative;
-    left: 140px;
-    bottom: 30px;
-}
+   #valoresFrutal {
+      display: flex;
+      flex-direction: start;
+      position: relative;
+      left: 140px;
+      bottom: 30px;
+   }
 
-#valoresFrutal > p {
-    margin: 0px 250px 0px 150px;
-    color: #FFFFFF;
-    font-size: 20px;
-}
+   #valoresFrutal > p {
+      margin: 0px 250px 0px 150px;
+      color: #FFFFFF;
+      font-size: 20px;
+   }
 
-#cervezaEnvejecida {
-    display: flex;
-    flex-direction: start;
-    position: relative;
-    left: 100px;
-    top: 40px; 
-}
+   #cervezaEnvejecida {
+      display: flex;
+      flex-direction: start;
+      position: relative;
+      left: 100px;
+      top: 40px; 
+   }
 
-#textoEnvejecida {
-    display: flex;
-    flex-direction: start;
-    position: relative;
-    left: 150px;
-    top: 60px;
-}
+   #textoEnvejecida {
+      display: flex;
+      flex-direction: start;
+      position: relative;
+      left: 150px;
+      top: 60px;
+   }
 
-#textoEnvejecida > p {
-    margin: 0px 170px 0px 100px;
-    color: #FFFFFF;
-    font-size: 20px;
-}
+   #textoEnvejecida > p {
+      margin: 0px 170px 0px 100px;
+      color: #FFFFFF;
+      font-size: 20px;
+   }
 
-#valoresEnvejecida {
-    display: flex;
-    flex-direction: start;
-    position: relative;
-    left: 150px;
-    top: 60px;
-}
+   #valoresEnvejecida {
+      display: flex;
+      flex-direction: start;
+      position: relative;
+      left: 150px;
+      top: 60px;
+   }
 
-#valoresEnvejecida > p {
-    margin: 0px 250px 0px 150px;
-    color: #FFFFFF;
-    font-size: 20px;
-}
+   #valoresEnvejecida > p {
+      margin: 0px 250px 0px 150px;
+      color: #FFFFFF;
+      font-size: 20px;
+   }
 
-#total {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    align-items: center;
-    text-align: center;
-    background: #FFFFFF;
-    border-radius: 50px;
-    color: #4A989E;
-    font-size: 40px;
-    padding: 20px 0px 0px 50px;
-    position: relative;
-    left: 500px;
-    top: 200px;
-}
+   #total {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      align-items: center;
+      text-align: center;
+      background: #FFFFFF;
+      border-radius: 50px;
+      color: #4A989E;
+      font-size: 40px;
+      padding: 20px 0px 0px 50px;
+      position: relative;
+      left: 500px;
+      top: 200px;
+   }
 
-#eleccion {
-    display: flex;
-    flex-direction: column;
-    color: #000000;
-    font-size: 20px;
-}
+   #eleccion {
+      display: flex;
+      flex-direction: column;
+      color: #000000;
+      font-size: 20px;
+   }
 
-#resultado {
-    display: flex;
-    flex-direction: start;
-    align-items: center;
-}
+   #resultado {
+      display: flex;
+      flex-direction: start;
+      align-items: center;
+   }
 
-#comprar {
-    width: 243px;
-    height: 59px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    color: #4A989E;
-    font-size: 30px;
-    border: none;
-    position: relative;
-    left: 650px;
-    top: 250px;
-    cursor: pointer;
-}
+   #comprar {
+      width: 243px;
+      height: 59px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50px;
+      color: #4A989E;
+      font-size: 30px;
+      border: none;
+      position: relative;
+      left: 650px;
+      top: 250px;
+      cursor: pointer;
+   }
 
-#finalVitrina {
-    width: 376px;
-    height: 370px;
-    position: relative;
-    left: 1200px;
-}
+   #finalVitrina {
+      width: 376px;
+      height: 370px;
+      position: relative;
+      left: 1200px;
+   }
 
-#eliminar {
-    background: #F7F7F7;
-    width: 60px;
-    height: 25px;
-    color: #888888;
-    text-align: center;
-    border-radius: 20px;
-    margin: 0px 0px 0px 30px;
+   #eliminar {
+      background: #F7F7F7;
+      width: 60px;
+      height: 25px;
+      color: #888888;
+      text-align: center;
+      border-radius: 20px;
+      margin: 0px 0px 0px 30px;
+   }
+
 }

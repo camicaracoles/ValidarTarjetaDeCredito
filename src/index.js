@@ -5,7 +5,8 @@ function detalle(num) {
     let producto = productos[num];  
     let paraNodo = document.createElement("div");
     let htmlTarjeta = `
-        <p id='${producto.idBorrar}'>${producto.name} $${producto.valor} <button id="eliminar" onclick="eliminar(`+producto.id+`)">borrar</button></p>
+        <p id='${producto.idBorrar}'>${producto.name} $${producto.valor} 
+        <button id="eliminar" onclick="eliminar(`+producto.id+`)">borrar</button></p>
     `
     
     let detallecompra = document.getElementById("eleccion");
@@ -30,5 +31,3 @@ const eliminar = (camila) => {
     let detalle = document.getElementById(idElemento);
     detalle.parentNode.removeChild(detalle);
 }
-
-
