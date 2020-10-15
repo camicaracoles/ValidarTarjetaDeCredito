@@ -26,8 +26,24 @@ function total() {
     totalSuma.innerHTML = suma;
 }
 
-const eliminar = (camila) => {
-    let idElemento = 'item'+ camila
+const eliminar = (producto) => {
+    let idElemento = 'item'+ producto;
     let detalle = document.getElementById(idElemento);
     detalle.parentNode.removeChild(detalle);
+    
+    let elProducto = productos[producto]
+    console.log(elProducto)
+    if (elProducto !== '') {
+        let valores = contenedor;
+        console.log(valores)
+        let valorP = elProducto.valor;
+        console.log(valorP)
+        let posicion = valores.indexOf(valorP);
+        console.log(valores.indexOf(valorP))
+        valores.splice(posicion,1);
+        total()
+    }
+
+
+
 }
