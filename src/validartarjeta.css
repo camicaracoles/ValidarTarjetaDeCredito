@@ -1,83 +1,212 @@
-#paginaValidar {
-    background: url(../img/fondoValidar.png) center fixed; 
-    background-size: cover;
+@media (min-width:1500px) { 
+    #paginaValidar {
+        background: url(../img/fondoValidar.png) center fixed; 
+        background-size: cover;
+    }
+
+    #tdc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Fjalla One', sans-serif; 
+        width: 690px;
+        height: 780px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-left: 280px;
+        border-radius: 28px;
+        background-color: #55AFAE;
+        border: 4px #F2D0A4;
+        box-shadow: 5px 10px 2px #92B082;
+        position: relative;
+        left: 250px;
+        color: #FFFFFF;
+    }   
+
+    .texto {
+        margin: 25px 0px 25px 0px;
+    }
+
+    #texto2 {
+        position: relative;
+        top: 10px;
+    }
+
+    #textoIdentificación {
+        margin: 0px;
+    }
+
+    #tdc > div {
+        display: flex;
+        flex-direction: start;
+    }
+
+    .botonOpcion {
+        width: 100px;
+        height: 30px;
+        margin: 20px 20px 0px 20px;
+    }
+
+    .botonOpcionInpu {
+        width: 150px;
+        height: 20px;
+        margin: 20px 0px 0px 20px;
+    }
+
+    #identificacionContenedor{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #botonOpcionIdentificación {
+        width: 100px;
+        height: 30px;
+        margin: 5px 20px 0px 0px;
+    }
+
+    #logo2 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: solid 3px #FFFFFF;
+        right: 10px;
+        top: 10px;
+        position: absolute;
+    }
+
+    #button2 {
+        background: #FFFFFF;
+        width: 250px;
+        height: 50px;
+        color: #0bb2b5;
+        text-align: center;
+        border-radius: 20px;
+        padding: 7px 40px;
+        margin: 10px 0px 20px 0px;
+        border: none;
+        box-shadow: 5px 10px 2px #92B082;
+    }
+
+
 }
 
-#tdc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Fjalla One', sans-serif; 
-    width: 690px;
-    height: 780px;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-left: 280px;
-    border-radius: 28px;
-    background-color: #55AFAE;
-    border: 4px #F2D0A4;
-    box-shadow: 5px 10px 2px #92B082;
-    position: relative;
-    left: 250px;
-    color: #FFFFFF;
-}   
+@media (max-width:1440px) { 
+    #paginaValidar {
+        background-color: #F9E57C;  
+    }
+    
+    #logo2 {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: solid 3px #FFFFFF;
+        right: 10px;
+        top: 10px;
+        position: absolute;
+    }
 
-.texto {
-    margin: 25px 0px 25px 0px;
-}
+    #tdc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Fjalla One', sans-serif; 
+        width: 400px;
+        height: 830px;
+        border-radius: 28px;
+        background-color: #55AFAE;
+        border: 4px #F2D0A4;
+        box-shadow: 5px 10px 2px #92B082;
+        position: relative;
+        top: 120px;
+        color: #FFFFFF;
+    }   
 
-#textoIdentificación{
-    margin: 0px;
-}
+    .texto {
+        margin: 20px 0px 20px 0px;
+        width: 150px;
+    }
 
-#tdc > div {
-    display: flex;
-    flex-direction: start;
-}
+    #texto2 {
+        margin: 20px 0px 20px 0px;
+        width: 150px;
+        position: relative;
+        left: 50px;
+        bottom: 10px;
+    }
 
-.botonOpcion {
-    width: 100px;
-    height: 30px;
-    margin: 20px 20px 0px 20px;
-}
+    #textoIdentificación {
+        margin: 0px 0px 0px 20px;
+        width: 150px;
+    }
 
-.botonOpcionInpu {
-    width: 150px;
-    height: 20px;
-    margin: 20px 0px 0px 20px;
-}
+    #tdc > div {
+        display: flex;
+        flex-direction: start;
+    }
 
-#identificacionContenedor{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
+    .botonOpcion {
+        width: 100px;
+        height: 30px;
+        margin: 15px 10px 0px 15px;
+    }
 
-#botonOpcionIdentificación {
-    width: 100px;
-    height: 30px;
-    margin: 5px 20px 0px 0px;
-}
+    .botonOpcionInpu {
+        width: 150px;
+        height: 20px;
+        margin: 20px 0px 0px 20px;
+    }
 
-#logo2 {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    border: solid 3px #FFFFFF;
-    right: 10px;
-    top: 10px;
-    position: absolute;
-}
+    #identificacionContenedor{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
 
-#button2 {
-    background: #FFFFFF;
-    width: 250px;
-    height: 50px;
-    color: #0bb2b5;
-    text-align: center;
-    border-radius: 20px;
-    padding: 7px 40px;
-    margin: 10px 0px 20px 0px;
-    border: none;
-    box-shadow: 5px 10px 2px #92B082;
+    #botonOpcionIdentificación {
+        width: 100px;
+        height: 30px;
+        margin: 5px 20px 0px 0px;
+    }
+
+    #logo2 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: solid 3px #FFFFFF;
+        right: 10px;
+        top: 10px;
+        position: absolute;
+    }
+
+    #button2 {
+        background: #FFFFFF;
+        width: 250px;
+        height: 50px;
+        color: #0bb2b5;
+        text-align: center;
+        border-radius: 20px;
+        padding: 7px 40px;
+        margin: 10px 0px 20px 0px;
+        border: none;
+        box-shadow: 5px 10px 2px #92B082;
+    }
+
+    #identificacion {
+        position: relative;
+        left: 160px;
+        bottom: 40px;
+    }
+
+    #documento {
+        position: relative;
+        right: 170px;
+        top: 20px;
+    }
+
+    #tipopais {
+        position: relative;
+        left: 150px;
+        bottom: 25px;
+    }
 }
